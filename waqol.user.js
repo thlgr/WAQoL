@@ -1,11 +1,23 @@
 // ==UserScript==
-// @name         WAQoL
-// @namespace    local
-// @version      1.0.0
-// @description  Quality of Life updates for Whatsapp Web
-// @match        https://web.whatsapp.com/*
-// @run-at       document-start
-// @grant        none
+// @name               WAQoL
+// @author             thlgr
+// @namespace          https://github.com/thlgr/WAQoL
+// @supportURL         https://github.com/thlgr/WAQoL/issues
+// @homepageURL        https://github.com/thlgr/WAQoL
+// @homepage           https://github.com/thlgr/WAQoL
+// @license            AGPL-3.0
+// @compatible         chrome
+// @compatible         edge
+// @compatible         opera
+// @compatible         kiwi
+// @compatible         qq
+// @compatible         via
+// @compatible         brave
+// @version            1.0.0
+// @description        Quality of Life updates for Whatsapp Web
+// @match              https://web.whatsapp.com/*
+// @run-at             document-start
+// @grant              none
 // ==/UserScript==
 
 (() => {
