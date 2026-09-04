@@ -4,9 +4,9 @@ Fix Whatsapp Web lagginess. This userscripts applies patches as an attempt to ma
 
 ## How it works
 
-Message panel scrolls on the main thread, so the browser has to check every frame if the content needs repainting or handle events before it can update the UI. This makes the scrolling visibly choppy.
+The browser has to draw each message as it comes into the screen, if it can't keep up, scrolling looks choppy.
 
-After researching for a long time I figured out this CSS rule fixes this issue (in my machine, the chat history scrolling goes from 15 fps to a full 60 fps):
+After researching for a long time, I figured out this CSS rule fixes this issue (in my machine, the chat history scrolling goes from 15 fps to a full 60 fps):
 
 ```css
 [data-testid="conversation-panel-messages"] {
@@ -14,7 +14,7 @@ After researching for a long time I figured out this CSS rule fixes this issue (
 }
 ```
 
-This tells the browser to get ready for scrolling. By creating a separate visual layer on the GPU, it can move the screen up and down directly. That keeps scrolling fast and smooth without slowing down the rest of the page. 
+This tells the browser to get ready for scrolling, indicating it can optimize the rendering of overflowing content. That keeps scrolling fast and smooth without slowing down the rest of the page. 
 
 Other patches are applied to reduce CPU work.
 
