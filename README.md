@@ -20,7 +20,8 @@ Other patches are applied to reduce CPU work.
 
 ## Install
 
-1. Install a userscript manager ([Violentmonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/), etc.
-2. Make sure to enable user scripts in extension settings
+1. Install a userscript manager ([Violentmonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/), etc).
+2. Make sure to enable user scripts in extension settings.
+3. [Install](https://github.com/thlgr/WAQoL/raw/refs/heads/main/waqol.user.js)
 
 The script has some fallbacks in case WhatsApp Web updates, but in case the patches starts failing open an issue.
